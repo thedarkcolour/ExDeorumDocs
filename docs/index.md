@@ -1,17 +1,15 @@
-# Welcome to MkDocs
+# Ex Deorum Documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This documentation is intended for modpack authors who wish to customize some of Ex Deorum's features.
 
-## Commands
+To see a list of KubeJS functions added by Ex Deorum, [view this page](/docs/kubejs.md).
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Overview
+Ex Deorum supports datapack recipes for the following machines:
+* Barrel
+* Sieve
+* Lava Crucible
+* Water Crucible
+* Hammer
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Specific guides for using each will be added to the documentation soon.
