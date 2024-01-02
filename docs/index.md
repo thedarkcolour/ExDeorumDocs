@@ -6,6 +6,7 @@ To see a list of KubeJS functions added by Ex Deorum, [view this page](./kubejs.
 
 ## Overview
 Ex Deorum supports datapack recipes for the following machines:
+
 * Barrel
 * Sieve
 * Lava Crucible
