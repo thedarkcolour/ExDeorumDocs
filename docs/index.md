@@ -2,7 +2,7 @@
 
 This documentation is intended for modpack authors who wish to customize some of Ex Deorum's features.
 
-To see a list of KubeJS functions added by Ex Deorum, [view this page](/docs/kubejs.md).
+To see a list of KubeJS functions added by Ex Deorum, [view this page](./kubejs.md).
 
 ## Overview
 Ex Deorum supports datapack recipes for the following machines:
