@@ -1,7 +1,7 @@
 # KubeJS Support
-Ex Deorum provides some functionality that should make it easier to use KubeJS to customize the machines. Here is a list of every function added by Ex Deorum to KubeJS, under the `exdeorum` extension.
-***
-### `removeDefaultSieveRecipes(RecipesEventJS)`
+Ex Deorum provides some functionality that should make it easier to use KubeJS to customize the machines. Here is a list of every function added by Ex Deorum to KubeJS, under the `exdeorum` extension. [Types](#types) added by Ex Deorum are listed at the bottom of the page.
+## Functions
+### `removeDefaultSieveRecipes(event: RecipesEventJS)`
 Removes every sieve recipe added by Ex Deorum. Useful if you prefer to write your own sieve drops instead of using the default ones in Ex Deorum.
 ```js
 ServerEvents.recipes((event) => {
@@ -33,4 +33,18 @@ Sets the heat value for every state of the specified block. Example:
 exdeorum.setCrucibleHeatValueForBlock('minecraft:white_wool', 5);
 // Equivalent
 exdeorum.setCrucibleHeatValue('minecraft:white_wool', 5);
+```
+***
+### `RecipeEventJS.remove(filter: RecipeFilter)`
+Ex Deorum modifies the `remove` function to also accept a "sieve_mesh" property, useful for removing Sieve recipes based on what mesh they use. Here is an example of what that looks like:
+```js
+// Removes every sieve recipe added by Ex Deorum for Gravel that uses the Flint Mesh.
+ServerEvents.recipes((event) => {
+  event.remove({
+    input: 'minecraft:gravel',
+    sieve_mesh: 'exdeorum:flint_mesh',
+    type: 'exdeorum:sieve',
+    mod: 'exdeorum'
+  });
+});
 ```
