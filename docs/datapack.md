@@ -197,8 +197,7 @@ Recipe type: `exdeorum:sieve`
 | `mesh` | string | The registry ID of the mesh used for sifting. |
 | `result` | string | The registry ID of the item dropped from this recipe. |
 | `result_amount` | number provider | The quantity dropped. See [Minecraft Wiki](https://minecraft.wiki/w/Loot_table#Number_provider) for info. |
-| `result` | string | The registry ID of the item crafted by this recipe. |
-| `consumes_additive` | boolean | OPTIONAL: If the additive fluid is consumed. Default: true|
+| `by_hand_only` | boolean | OPTIONAL: If true, this item will not drop from a Mechanical Sieve. Default: false|
 
 Example recipe for giving Raw Gold an 8% chance of dropping from Red Sand using a Diamond Mesh:
 ```json
