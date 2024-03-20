@@ -74,7 +74,42 @@ Example recipe for mixing water into lava to craft obsidian:
 ```
 ---
 ## Barrel Fluid Transformation
-As of Ex Deorum 1.25, barrel fluid transformation recipes are not currently supported in Ex Deorum. Check [this issue](https://github.com/thedarkcolour/ExDeorum/issues/4) for updates.
+As of Ex Deorum 1.26, barrel fluid transformation recipes are now supported in Ex Deorum.
+Barrel fluid transformation recipes allow transforming one fluid into another, 1000mB at a time, by filling a barrel placed on top of a catalyst block. A barrel can use up to nine catalyst blocks, detected below the barrel in a 3x3 range, which will cut the duration of the transformation by 9. For example, a barrel placed on top of a 3x3 of Mycelium will take 1700 / 9 = 189 ticks to transform instead of the base 1700 duration. The only usage of barrel fluid transformation recipes in base Ex Deorum is for converting Water into Witch Water.      
+Recipe type: `exdeorum:barrel_fluid_transformation`
+
+| Property  | Type | Description |
+| --------- | ------- | ----------- |
+| `base_fluid` | string | The registry ID of the fluid inside the barrel used for crafting. |
+| `byproducts` | weighted_list | The amount fluid inside the barrel used for crafting. |
+| `catalyst` | block_predicate | The registry ID of the fluid placed on top of the barrel. |
+| `duration` | integer | The base number of ticks taken to transform. Read above for details |
+| `result_color` | integer | The color of the resultant fluid, used in the animation. |
+| `result_fluid` | string | The registry ID of the fluid yielded by this recipe. |
+
+Example recipe for converting Water into Witch Water when in a barrel placed ontop of Mycelium, with a chance to spawn mushrooms during the conversion:
+```json
+{
+  "type": "exdeorum:barrel_fluid_transformation",
+  "base_fluid": "minecraft:lava",
+  "byproducts": [
+    {
+      "value": "minecraft:red_mushroom",
+      "weight": 50
+    },
+    {
+      "value": "minecraft:brown_mushroom",
+      "weight": 50
+    }
+  ],
+  "catalyst": {
+    "block": "minecraft:mycelium"
+  },
+  "duration": 1700,
+  "result_color": 2822231,
+  "result_fluid": "exdeorum:witch_water"
+}
+```
 
 ---
 ## Crucible Heat Source
