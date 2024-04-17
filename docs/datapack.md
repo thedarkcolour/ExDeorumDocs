@@ -34,6 +34,7 @@ Recipe type: `exdeorum:barrel_item_mixing`
 | `fluid` | string | The registry ID of the fluid required for this recipe. |
 | `fluid_amount` | integer | The amount of fluid used to craft this recipe. |
 | `result` | string | The registry ID of the item crafted by this recipe. |
+| `result_nbt` | string | OPTIONAL: The NBT data of the result, written like in /give. |
 
 Example recipe for mixing dust into water to create clay:
 ```json
@@ -59,6 +60,7 @@ Recipe type: `exdeorum:barrel_fluid_mixing`
 | `additive_fluid` | string | The registry ID of the fluid placed on top of the barrel. |
 | `fluid_amount` | integer | The amount of fluid used to craft this recipe. |
 | `result` | string | The registry ID of the item crafted by this recipe. |
+| `result_nbt` | string | OPTIONAL: The NBT data of the result, written like in /give. |
 | `consumes_additive` | boolean | OPTIONAL: If the additive fluid is consumed. Default: true|
 
 Example recipe for mixing water into lava to craft obsidian:
@@ -182,6 +184,7 @@ Recipe type: `exdeorum:crook`
 | `block_predicate` | block_predicate | Specifies which blocks this item can drop from. |
 | `chance` | float | The probability of this item dropping. |
 | `result` | string | The registry ID of the item to drop. |
+| `result_nbt` | string | OPTIONAL: The NBT data of the result, written like in /give. |
 
 Example recipe for giving silkworms a 1% chance to drop from leaves:
 ```json
@@ -204,6 +207,7 @@ Recipe type: `exdeorum:hammer`
 | `ingredient` | ingredient | Specifies which blocks this item can drop from. |
 | `result` | string | The registry ID of the item to drop. |
 | `result_amount` | number provider | The quantity dropped. See [Minecraft Wiki](https://minecraft.wiki/w/Loot_table#Number_provider) for info. |
+| `result_nbt` | string | OPTIONAL: The NBT data of the result, written like in /give. |
 
 Example recipe for crushing Deepslate and Cobbled Deepslate into Crushed Deepslate:
 ```json
@@ -232,6 +236,7 @@ Recipe type: `exdeorum:sieve`
 | `mesh` | string | The registry ID of the mesh used for sifting. |
 | `result` | string | The registry ID of the item dropped from this recipe. |
 | `result_amount` | number provider | The quantity dropped. See [Minecraft Wiki](https://minecraft.wiki/w/Loot_table#Number_provider) for info. |
+| `result_nbt` | string | OPTIONAL: The NBT data of the result, written like in /give. |
 | `by_hand_only` | boolean | OPTIONAL: If true, this item will not drop from a Mechanical Sieve. Default: false|
 
 Example recipe for giving Raw Gold an 8% chance of dropping from Red Sand using a Diamond Mesh:
