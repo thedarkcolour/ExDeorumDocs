@@ -108,7 +108,7 @@ The item tag file:
 The resource pack should include a blockstate file, a block and item model, and optionally textures. For Iron Block, we'll just use Vanilla texture. <br><br>
 The blockstate file:
 ```json
-// myresourcepack.zip, assets/exdeorum/blockstate/iron_barrel.json
+// myresourcepack.zip, assets/exdeorum/blockstates/iron_barrel.json
 {
   "variants": {
     "": {
@@ -231,7 +231,7 @@ The block tag file for harvesting with a pickaxe:
 The resource pack should include a blockstate file, a block and item model, and optionally textures. For Stone, we'll just use Vanilla texture. <br><br>
 The blockstate file:
 ```json
-// myresourcepack.zip, assets/exdeorum/blockstate/stone_sieve.json
+// myresourcepack.zip, assets/exdeorum/blockstates/stone_sieve.json
 {
   "variants": {
     "": {
@@ -353,7 +353,7 @@ The block tag file for harvesting with a pickaxe:
 The resource pack should include a blockstate file, a block and item model, and optionally textures. For Stone, we'll just use Vanilla texture. <br><br>
 The blockstate file:
 ```json
-// myresourcepack.zip, assets/exdeorum/blockstate/iron_crucible.json
+// myresourcepack.zip, assets/exdeorum/blockstates/iron_crucible.json
 {
   "variants": {
     "": {
