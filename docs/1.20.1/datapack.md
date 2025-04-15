@@ -26,7 +26,7 @@ Example recipe for composting leaves into 125 compost:
 ---
 ## Barrel Item Mixing
 A barrel item mixing recipe allows crafting an item by putting an item into a barrel with some fluid in it.      
-Recipe type: `exdeorum:barrel_item_mixing`
+Recipe type: `exdeorum:barrel_mixing`
 
 | Property  | Type | Description |
 | --------- | ------- | ----------- |
